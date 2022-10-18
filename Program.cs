@@ -1,9 +1,9 @@
 ﻿class jumperManGame{
 
-    JumpMan JumpMan = new JumpMan;
+    JumpMan Jumper = new JumpMan();
 
-    public void Game{
-
+    public void Game(){
+        
 
     }
 

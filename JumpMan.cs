@@ -1,15 +1,15 @@
 public class JumpMan
 {
     string Row1 = "    ______    ";
-    string Row2 = "   /______\   ";
-    string Row3 = "    \   /    ";
-    string Row4 = "     \ /     ";
+    string Row2 = @"   /______\   ";
+    string Row3 = @"    \   /    ";
+    string Row4 = @"     \ /     ";
     string Row5 = "      O ";
-    string Row6 = "     /|\ ";
-    string Row7 = "     / \ ";
-     string Row8 = "^^^^^^^^^^^^^^";
+    string Row6 = @"     /|\ ";
+    string Row7 = @"     / \ ";
+    string Row8 = "^^^^^^^^^^^^^^";
 
-    public Jumper(int error)
+    public void Jumper(int error)
     {
         if (error == 0) {
             Console.WriteLine($"Row1");

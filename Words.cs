@@ -2,10 +2,10 @@ class Words{
 
     List<string> Word = new List<string>{"W", "O", "R", "D"};
     List<string> Mark = new List<string>{"M", "A", "R", "K"};
-    List<string> Fill = new List<string>{"F", "I", "L", "L"};
+    List<string> Shot = new List<string>{"S", "H", "O", "T"};
     List<string> Star = new List<string>{"S", "T", "A", "R"};
     List<string> Done = new List<string>{"D", "O", "N", "E"};
-    List<string> Options = new List<string>{"Word", "Mark", "Fill", "Star", "Done"};
+    List<string> Options = new List<string>{"Word", "Mark", "Shot", "Star", "Done"};
 
     public List<string> WordSelection(){
         Random rnd = new Random();
@@ -15,17 +15,20 @@ class Words{
         if (Selected == "Word"){
             Chosen = Word;
         }
-        if (Selected == "Mark"){
+        else if (Selected == "Mark"){
             Chosen = Mark;
         }
-        if (Selected == "Fill"){
-            Chosen = Fill;
+        else if (Selected == "Shot"){
+            Chosen = Shot;
         }
-        if (Selected == "Star"){
+        else if (Selected == "Star"){
             Chosen = Star;
         }
-        if (Selected == "Done"){
+        else if (Selected == "Done"){
             Chosen = Done;
+        }
+        else{
+            Chosen = Word;
         }
 
         return Chosen;

@@ -1,9 +1,9 @@
 ﻿class jumperManGame{
 
-    JumpMan JumpMan = new JumpMan();
-    Words Words = new Words();
+    static JumpMan JumpMan = new JumpMan();
+    static Words Words = new Words();
 
-    public void Game(){
+    public static void Main(){
         Console.WriteLine("Welcome to Jumper!");
         Console.WriteLine("Correctly guess the word within 4 guesses to save the Jumper!");
         Console.WriteLine("");

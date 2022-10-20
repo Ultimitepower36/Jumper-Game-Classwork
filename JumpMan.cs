@@ -5,6 +5,7 @@ public class JumpMan
     string Row3 = @"    \   /    ";
     string Row4 = @"     \ /     ";
     string Row5 = "      O ";
+    string RowGameOver = "      X ";
     string Row6 = @"     /|\ ";
     string Row7 = @"     / \ ";
     string Row8 = "^^^^^^^^^^^^^^";
@@ -22,6 +23,12 @@ public class JumpMan
         }
         if (error <= 2) {
             Console.WriteLine($"Row4");
+        }
+        if (error > 2){
+            Console.WriteLine($"RowGameOver");
+        }
+        else {
+            Console.WriteLine($"Row5");
         }
         Console.WriteLine($"Row5");
         Console.WriteLine($"Row6");

@@ -13,7 +13,7 @@
         while (!GameOver){
             JumpMan.Jumper(0);
             Console.WriteLine("Guess a letter [a-z] (lowercase please): ");
-
+            GameOver = true;
         }
     }
 }

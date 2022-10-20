@@ -7,7 +7,7 @@ class Words{
     List<string> Done = new List<string>{"D", "O", "N", "E"};
     List<string> Options = new List<string>{"Word", "Mark", "Fill", "Star", "Done"};
 
-    public WordSelection(){
+    public List<string> WordSelection(){
         Random rnd = new Random();
         int number = rnd. Next(0, 5);
         var Selected = Options[number];

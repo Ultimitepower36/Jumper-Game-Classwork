@@ -14,17 +14,18 @@ public class JumpMan
     {
         if (error == 0) {
             Console.WriteLine($"{Row1}");
-        }
-        if (error <= 1) {
             Console.WriteLine($"{Row2}");
-        }
-        if (error <= 2) {
             Console.WriteLine($"{Row3}");
-        }
-        if (error <= 2) {
             Console.WriteLine($"{Row4}");
         }
-        if (error > 2){
+        if (error < 1) {
+             Console.WriteLine($"{Row3}");
+             Console.WriteLine($"{Row4}");
+        }
+        if (error < 2) {
+            Console.WriteLine($"{Row4}");
+        }
+        if (error == 4){
             Console.WriteLine($"{RowGameOver}");
         }
         else {
